@@ -1,13 +1,13 @@
 {
   "main.css": "/infinite-cats/static/css/main.9df19de3.chunk.css",
-  "main.js": "/infinite-cats/static/js/main.bd380c33.chunk.js",
-  "main.js.map": "/infinite-cats/static/js/main.bd380c33.chunk.js.map",
+  "main.js": "/infinite-cats/static/js/main.140bec90.chunk.js",
+  "main.js.map": "/infinite-cats/static/js/main.140bec90.chunk.js.map",
   "runtime~main.js": "/infinite-cats/static/js/runtime~main.2d96ad1b.js",
   "runtime~main.js.map": "/infinite-cats/static/js/runtime~main.2d96ad1b.js.map",
   "static/js/2.387ff043.chunk.js": "/infinite-cats/static/js/2.387ff043.chunk.js",
   "static/js/2.387ff043.chunk.js.map": "/infinite-cats/static/js/2.387ff043.chunk.js.map",
   "index.html": "/infinite-cats/index.html",
-  "precache-manifest.ac6f3dac66405d15a718b36c5d1126e5.js": "/infinite-cats/precache-manifest.ac6f3dac66405d15a718b36c5d1126e5.js",
+  "precache-manifest.a4d14f50a35f3b6bb040d252560d1c9c.js": "/infinite-cats/precache-manifest.a4d14f50a35f3b6bb040d252560d1c9c.js",
   "service-worker.js": "/infinite-cats/service-worker.js",
   "static/css/main.9df19de3.chunk.css.map": "/infinite-cats/static/css/main.9df19de3.chunk.css.map"
 }
