@@ -1,24 +1,43 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+function getNewCat () {
+  return `https://cataas.com/cat/gif?rand=${Math.random()}`
+}
+
 class App extends Component {
-  render() {
+  constructor () {
+    super();
+    this.state = {
+      cats: new Array(5).fill().map(x => getNewCat())
+    }
+    
+    this.addCat.bind(this);
+    window.onscroll = (ev) => {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        this.addCat()
+      }
+    };
+  }
+  
+  addCat () {
+    let {cats} = this.state
+    cats.push(getNewCat());
+    this.setState({cats});
+  }
+  
+  render () {
+    let {cats} = this.state
     return (
       <div className="App">
+        <h1>
+          A Random Cat Gif Browser Built on &nbsp;
+          <a href="https://reactjs.org/"><code>ReactJS</code></a> &nbsp;
+          and&nbsp;
+          <a href="https://cataas.com/#/"><code>CATaaS</code></a>
+        </h1>
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          {cats.map(cat => <img src={cat} className="App-logo" alt="cat" key={cat}/>)}
         </header>
       </div>
     );
