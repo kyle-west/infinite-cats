@@ -36,6 +36,9 @@ class App extends Component {
           and&nbsp;
           <a href="https://cataas.com/#/"><code>CATaaS</code></a>
         </h1>
+        <h6>
+        <a href="https://github.com/kyle-west/infinite-cats"><code>Fork Me on GitHub</code></a>
+        </h6>
         <header className="App-header">
           {cats.map(cat => <img src={cat} className="App-logo" alt="cat" key={cat}/>)}
         </header>
